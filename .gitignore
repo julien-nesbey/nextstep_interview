@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+env/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# ML models and data
+models/*.bin
+models/*.pt
+models/*.onnx
+models/*.pth
+models/pytorch_model.bin
+.cache/
+.huggingface/
+.transformers_cache/
+
+# Docker
+.dockerignore
+docker-compose*.yml
+*.tar.gz
+
+# IDE settings
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Local development
+instance/
+.webassets-cache
+.hypothesis/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Temporary files
+tmp/
+temp/
