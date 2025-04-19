@@ -74,14 +74,12 @@ socketio = SocketIO(
 )
 
 # Constants
-MAX_INTERVIEW_ROUNDS = 10
+MAX_INTERVIEW_ROUNDS = 2
 DEBUG_MODE = os.getenv("DEBUG_MODE", "false").lower() == "true"
-FACE_PROTOTXT = "models/face_detection/deploy.prototxt"
-FACE_MODEL = "models/face_detection/res10_300x300_ssd_iter_140000_fp16.caffemodel"
-EL_KEY = os.getenv("ELEVEN_LABS_API_KEY")
-EL_VOICE_ID = os.getenv("ELEVEN_LABS_VOICE_ID")
 LLM_MODEL = os.getenv("LLM_MODEL")
 LLM_API_KEY = os.getenv("LLM_API_KEY")
+FACE_PROTOTXT = "models/face_detection/deploy.prototxt"
+FACE_MODEL = "models/face_detection/res10_300x300_ssd_iter_140000_fp16.caffemodel"
 
 # Emotion mapping
 EMOTION_MAP = {
@@ -1325,7 +1323,7 @@ def handle_user_answer(data):
                         from gql.transport.requests import RequestsHTTPTransport
 
                         transport = RequestsHTTPTransport(
-                            url="http://localhost:4000/graphql",
+                            url="http://51.20.143.187/graphql",
                             headers={"Content-Type": "application/json"},
                             use_json=True,
                         )
@@ -1886,7 +1884,7 @@ def enhanced_end_interview(interview_id, client_id, is_final_round=False):
                         from gql.transport.requests import RequestsHTTPTransport
 
                         transport = RequestsHTTPTransport(
-                            url="http://localhost:4000/graphql",
+                            url="http://51.20.143.187/graphql",
                             headers={"Content-Type": "application/json"},
                             use_json=True,
                         )

@@ -30,7 +30,7 @@ MAX_DELAY = 10  # seconds
 
 # Initialize GraphQL client with retry configuration
 transport = RequestsHTTPTransport(
-    url="http://localhost:4000/graphql",
+    url="http://51.20.143.187/graphql",
     headers={"Content-Type": "application/json"},
     use_json=True,
     retries=3,
