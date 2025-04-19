@@ -74,7 +74,7 @@ socketio = SocketIO(
 )
 
 # Constants
-MAX_INTERVIEW_ROUNDS = 2
+MAX_INTERVIEW_ROUNDS = 10
 DEBUG_MODE = os.getenv("DEBUG_MODE", "false").lower() == "true"
 LLM_MODEL = os.getenv("LLM_MODEL")
 LLM_API_KEY = os.getenv("LLM_API_KEY")
