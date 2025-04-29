@@ -209,6 +209,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Flask](https://flask.palletsprojects.com/) for the web framework
 - [Socket.IO](https://socket.io/) for real-time communication
 - [Together AI](https://www.together.ai/) for LLM services
-- [Eleven Labs](https://elevenlabs.io/) for text-to-speech capabilities
+- [Edge TTS](https://github.com/rany2/edge-tts) for text-to-speech capabilities
 - [OpenCV](https://opencv.org/) for computer vision functionality
 - [Transformers](https://huggingface.co/docs/transformers/index) for emotion analysis models
